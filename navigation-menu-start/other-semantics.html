@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Other semantics examples</title>
+  </head>
+  <body>
+    <p>
+      We use <abbr>HTML</abbr>, Hypertext Markup Language, to structure our web
+      documents.
+    </p>
+
+    <p>
+      I think <abbr title="Reverend">Rev.</abbr> Green did it in the kitchen
+      with the chainsaw.
+    </p>
+
+    <address>
+      <p>Chris Mills, Manchester, The Grim North, UK</p>
+    </address>
+
+    <p>My birthday is on the 25<sup>th</sup> of May 2001.</p>
+
+    <p>
+      Caffeine's chemical formula is
+      C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.
+    </p>
+
+    <p>If x<sup>2</sup> is 9, x must equal 3.</p>
+
+    <pre><code>var para = document.querySelector('p');
+        
+        para.onclick = function() {
+          alert('Owww, arrête de me toucher !');
+        }</code></pre>
+        
+        <p>N'utilisez pas d'éléments de présentation comme <code>&lt;font&gt;</code> et <code>&lt;center&gt;</code>.</p>
+        
+        <p>Dans l'exemple JavaScript ci‑dessus, <var>para</var> représente un élément paragraphe.</p>
+        
+        
+        <p>Sélectionnez la totalité du texte avec <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+        
+        <pre>$ <kbd>ping mozilla.org</kbd>
+        <samp>PING mozilla.org (63.245.208.195) 56(84) bytes of data.
+        64 bytes from mozilla.org (63.245.208.195): icmp_seq=1 ttl=46 time=191 ms</samp></pre>
+        <time datetime="2016-01-20">20 janvier 2016</time>
+        <p>20 janvier 2016</p>
+
+        <!-- Simple date standard -->
+<li><time datetime="2016-01-20">20 janvier 2016</time></li>
+<!-- Juste l'année et le mois -->
+<li><time datetime="2016-01">janvier 2016</time></li>
+<!-- Juste le mois et les jour -->
+<li><time datetime="01-20">20 janvier</time></li>
+<!-- Juste l'heure, heure et minutes -->
+<li><time datetime="19:30">19h30</time></li>
+<!-- Vous pouvez aussi mettre les secondes et les millisecondes&nbsp;! -->
+<li><time datetime="19:30:01.856">19h30m1,856s</time></li>
+<!-- Date et heure -->
+<li><time datetime="2016-01-20T19:30">19h30, le 20 janvier 2016</time></li>
+<!-- Date et heure avec décalage de fuseau horaire -->
+<li><time datetime="2016-01-20T19:30+01:00">19h30, le 20 janvier 2016 corespond à 20h30 en France</time></li>
+<!-- Appel d'un numéro de semains donné -->
+<li><time datetime="2016-W04">La 4<sup>e</sup> semaine de 2016</time></li>
+
+</body>
+</html>
